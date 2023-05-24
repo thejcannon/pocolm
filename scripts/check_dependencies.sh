@@ -31,11 +31,6 @@ for f in make gcc grep gzip git bash; do
   fi
 done
 
-if ! which svn >&/dev/null; then
-  echo "$0: subversion is not installed"
-  add_packages subversion subversion subversion
-fi
-
 if ! which awk >&/dev/null; then
   echo "$0: awk is not installed"
   add_packages gawk gawk gawk
